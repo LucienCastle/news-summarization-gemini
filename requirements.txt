@@ -1,0 +1,13 @@
+apache-airflow
+boto3
+botocore
+datetime
+google-generativeai
+newsapi-python
+plotly
+pytz
+s3fs
+streamlit
+tldextract
+vaderSentiment
+yfinance
