@@ -34,14 +34,16 @@ This project is a web application designed to analyze market news and predict st
    - Assign IAM role to EC2 instance
    - Connect to EC2
 
-2. **Clone the repository on your EC2:**
+2. **Clone the repository on your EC2 and install required packages:**
     ```bash
     git clone https://github.com/LucienCaslte/news-summarization-gemini
+    pip install -r requirements.txt
     ```
 
 3. **Build and run the Docker container:**
     - Build image
     ```bash
+    cd airflow
     docker build -t stock-news-app .
     docker run -d -p 8080:8080 -p 8501:8501 stock-news-app
     ```
